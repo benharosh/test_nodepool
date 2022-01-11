@@ -1,0 +1,81 @@
+pipelines:
+  - name: pipeline1
+    steps:
+      - name: step1
+        type: Bash
+        execution:
+          onExecute:
+            - sleep 30
+      - name: step2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: step1
+          requiresApproval: true
+        execution:
+          onExecute:
+            - echo "Hello World"
+  - name: pipeline2
+    steps:
+      - name: step1
+        type: Bash
+        execution:
+          onExecute:
+            - sleep 30
+      - name: step2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: step1
+          requiresApproval: true
+        execution:
+          onExecute:
+            - echo "Hello World"
+  - name: pipeline3
+    steps:
+      - name: step1
+        type: Bash
+        execution:
+          onExecute:
+            - sleep 30
+      - name: step2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: step1
+          requiresApproval: true
+        execution:
+          onExecute:
+            - echo "Hello World"
+  - name: pipeline4
+    steps:
+      - name: step1
+        type: Bash
+        execution:
+          onExecute:
+            - sleep 30
+      - name: step2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: step1
+          requiresApproval: true
+        execution:
+          onExecute:
+            - echo "Hello World"
+  - name: pipeline5
+    steps:
+      - name: step1
+        type: Bash
+        execution:
+          onExecute:
+            - sleep 30
+      - name: step2
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: step1
+          requiresApproval: true
+        execution:
+          onExecute:
+            - echo "Hello World"
