@@ -1,5 +1,7 @@
 pipelines:
   - name: pipeline1
+    configuration:
+      nodePool: default-dynamic-nodepool
     steps:
       - name: step1
         type: Bash
@@ -16,6 +18,8 @@ pipelines:
           onExecute:
             - echo "Hello World"
   - name: pipeline2
+    configuration:
+      nodePool: default-dynamic-nodepool
     steps:
       - name: step1
         type: Bash
@@ -32,6 +36,8 @@ pipelines:
           onExecute:
             - echo "Hello World"
   - name: pipeline3
+    configuration:
+      nodePool: default-dynamic-nodepool
     steps:
       - name: step1
         type: Bash
@@ -48,6 +54,8 @@ pipelines:
           onExecute:
             - echo "Hello World"
   - name: pipeline4
+    configuration:
+      nodePool: default-dynamic-nodepool
     steps:
       - name: step1
         type: Bash
@@ -64,6 +72,8 @@ pipelines:
           onExecute:
             - echo "Hello World"
   - name: pipeline5
+    configuration:
+      nodePool: default-dynamic-nodepool
     steps:
       - name: step1
         type: Bash
