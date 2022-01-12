@@ -5,11 +5,6 @@ pipelines:
     steps:
       - name: step1
         type: Bash
-        execution:
-          onExecute:
-            - sleep 30
-      - name: step2
-        type: Bash
         configuration:
           inputSteps:
             - name: step1
@@ -22,11 +17,6 @@ pipelines:
       nodePool: default-dynamic-nodepool
     steps:
       - name: step1
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 30
-      - name: step2
         type: Bash
         configuration:
           inputSteps:
@@ -41,11 +31,6 @@ pipelines:
     steps:
       - name: step1
         type: Bash
-        execution:
-          onExecute:
-            - sleep 30
-      - name: step2
-        type: Bash
         configuration:
           inputSteps:
             - name: step1
@@ -59,11 +44,6 @@ pipelines:
     steps:
       - name: step1
         type: Bash
-        execution:
-          onExecute:
-            - sleep 30
-      - name: step2
-        type: Bash
         configuration:
           inputSteps:
             - name: step1
@@ -76,11 +56,6 @@ pipelines:
       nodePool: default-dynamic-nodepool
     steps:
       - name: step1
-        type: Bash
-        execution:
-          onExecute:
-            - sleep 30
-      - name: step2
         type: Bash
         configuration:
           inputSteps:
