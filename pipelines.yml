@@ -1,56 +1,14 @@
 pipelines:
-  - name: pipeline1
+  - name: pipelineApproval
     configuration:
       nodePool: default-dynamic-nodepool
     steps:
       - name: step1
         type: Bash
         configuration:
-          requiresApproval: true
-        execution:
-          onExecute:
-            - echo "Hello World"
-  - name: pipeline2
-    configuration:
-      nodePool: default-dynamic-nodepool
-    steps:
-      - name: step1
-        type: Bash
-        configuration:
-          requiresApproval: true
-        execution:
-          onExecute:
-            - echo "Hello World"
-  - name: pipeline3
-    configuration:
-      nodePool: default-dynamic-nodepool
-    steps:
-      - name: step1
-        type: Bash
-        configuration:
-          requiresApproval: true
-        execution:
-          onExecute:
-            - echo "Hello World"
-  - name: pipeline4
-    configuration:
-      nodePool: default-dynamic-nodepool
-    steps:
-      - name: step1
-        type: Bash
-        configuration:
-          requiresApproval: true
-        execution:
-          onExecute:
-            - echo "Hello World"
-  - name: pipeline5
-    configuration:
-      nodePool: default-dynamic-nodepool
-    steps:
-      - name: step1
-        type: Bash
-        configuration:
-          requiresApproval: true
+          requiresApproval:
+            approvers:
+              - bob
         execution:
           onExecute:
             - echo "Hello World"
