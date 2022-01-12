@@ -6,8 +6,6 @@ pipelines:
       - name: step1
         type: Bash
         configuration:
-          inputSteps:
-            - name: step1
           requiresApproval: true
         execution:
           onExecute:
@@ -19,8 +17,6 @@ pipelines:
       - name: step1
         type: Bash
         configuration:
-          inputSteps:
-            - name: step1
           requiresApproval: true
         execution:
           onExecute:
@@ -32,8 +28,6 @@ pipelines:
       - name: step1
         type: Bash
         configuration:
-          inputSteps:
-            - name: step1
           requiresApproval: true
         execution:
           onExecute:
@@ -45,8 +39,6 @@ pipelines:
       - name: step1
         type: Bash
         configuration:
-          inputSteps:
-            - name: step1
           requiresApproval: true
         execution:
           onExecute:
@@ -58,8 +50,6 @@ pipelines:
       - name: step1
         type: Bash
         configuration:
-          inputSteps:
-            - name: step1
           requiresApproval: true
         execution:
           onExecute:
